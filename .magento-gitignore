@@ -1,0 +1,97 @@
+IDE and OS files
+#####
+.idea/
+.modgit/
+/.settings
+/.buildpath
+/.project
+/nbproject
+.svn
+robots.txt
+.DS_Store
+._.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+
+# Local logs
+/access.log
+/error.log
+/error_log
+
+#Devtools I want to keep seperate for every install
+n98-magerun.phar
+maintenance.flag-
+maintenance.flag
+/test/
+/chive/
+/phpmyadmin/
+/magmi/
+magento-db-repair-tool-1.1.php
+# Why AITOC.... why?.....
+/aitoc_uninstall.sh
+/_aitoc_filelists/
+
+# Unique config files
+app/etc/local.xml
+
+# Magento files. Generated includes, sample and licence files can be ignored
+/includes/
+index.php.sample
+LICENSE_AFL.txt
+LICENSE.html
+LICENSE.txt
+LICENSE_EE*
+php.ini.sample
+RELEASE_NOTES.txt
+
+# Don't wanna keep the entire image catalog in VC. But lets not forget the .htaccess
+/media/*
+!/media/.htaccess
+!/media/downloadable
+/media/downloadable/*
+!/media/downloadable/.htaccess
+
+
+# Don't wanna take the downloader's cache.
+/downloader/.cache/
+/downloader/cache.cfg
+/downloader/connect.cfg
+/downloader/pearlib/cache/*
+/downloader/pearlib/data/*
+/downloader/pearlib/docs/*
+/downloader/pearlib/download/*
+/downloader/pearlib/temp/*
+/downloader/pearlib/tests/*
+/downloader/pearlib/php/.channels
+/downloader/pearlib/php/.depdb
+/downloader/pearlib/php/.depdblock
+/downloader/pearlib/php/.filemap
+/downloader/pearlib/php/.lock
+/downloader/pearlib/php/.registry
+/downloader/pearlib/php/.registry
+
+# Same goes for var. Don't want to forget those .htaccess files.
+/var/*
+!/var/.htaccess
+!/var/backups
+/var/backups/*
+
+# no feeds
+/feeds/
+
+# Do not commit sitemaps and google verification files
+/sitemap*.xml
+/google*.html
+/sitemaps/*
+/sitemap/*
+
+# Don't wanna take all the backups.
+/app/etc/local.xml.backup.*
+!/var/backups/.htaccess
+
+#just to be sure we're not committing any backups. Of course these shouldn't be here. But hey, stuff happens.
+*.sql
+*.tar.gz
+
+# Project specific files
