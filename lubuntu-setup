@@ -24,9 +24,11 @@ sudo apt-get -y purge zeitgeist zeitgeist-core zeitgeist-datahub python-zeitgeis
 
 echo "Installing packages"
 
-apt-get install -y iw htop build-essential weechat-curses ekg2 python nodejs pipelight-multi spotify-client \
-		git-core xmonad xmobar firefox vlc vim php5 php5-mcrypt php5-curl php5-mysql php5-intl apache2 mysql-client-5.5 \
-		mysql-server-5.5 mysql-workbench terminator curl phpunit gimp php-apc trayer mtr calcurse newsbeuter cowsay xdebug
+sudo apt-get install -y curl git-core zsh
+
+sudo apt-get install -y iw htop build-essential weechat-curses ekg2 python nodejs pipelight-multi spotify-client 
+sudo apt-get install -y xmonad xmobar firefox vlc vim php5 php5-mcrypt php5-curl php5-mysql php5-intl apache2 mysql-client-5.5 
+sudo apt-get install -y mysql-server-5.5 mysql-workbench terminator phpunit gimp php-apc trayer mtr calcurse newsbeuter cowsay xdebug
 
 ###################
 # apt-clean
@@ -38,8 +40,9 @@ sudo apt-get autoremove
 ###################
 # hipster setup
 ###################
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 sudo npm install -g yo grunt-cli bower
-curl -L https://get.rvm.io | zsh -s stable --ruby
+sudo curl -L https://get.rvm.io | zsh -s stable --ruby
 
 ###################
 # pathogen and NERD tree install
@@ -59,8 +62,6 @@ sudo pipelight-plugin --enable silverlight
 pipelight-plugin --enable silverlight
 
 ###################
-# ohmyzsh
+# phpstorm
 ###################
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-
 wget http://download.jetbrains.com/webide/PhpStorm-7.1.tar.gz
