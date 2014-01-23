@@ -42,7 +42,7 @@ sudo apt-get autoremove
 ###################
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 sudo npm install -g yo grunt-cli bower
-sudo curl -L https://get.rvm.io | zsh -s stable --ruby
+sudo curl -L https://get.rvm.io | bash -s stable --ruby
 
 ###################
 # pathogen and NERD tree install
@@ -54,7 +54,6 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
 cd ~/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree.git
 
-
 ###################
 # netflix
 ###################
@@ -64,4 +63,5 @@ pipelight-plugin --enable silverlight
 ###################
 # phpstorm
 ###################
+cd ~/Downloads
 wget http://download.jetbrains.com/webide/PhpStorm-7.1.tar.gz
