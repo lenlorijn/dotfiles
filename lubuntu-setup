@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+rm -rf ~/Public/
+rm -rf ~/Templates/
+rm -rf ~/Videos
+
 sudo add-apt-repository "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 sudo apt-add-repository ppa:ehoover/compholio
