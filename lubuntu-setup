@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+sudo add-apt-repository "deb http://repository.spotify.com stable non-free"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+sudo apt-add-repository ppa:ehoover/compholio
+sudo apt-add-repository ppa:mqchael/pipelight
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo add-apt-repository ppa:ondrej/php5
+sudo add-apt-repository ppa:videolan/stable-daily
+
+sudo apt-get update
+sudo apt-get upgrade
+
+
+###################
+# meuk software weg
+###################
+echo "Meuk software weg"
+sudo apt-get -y purge zeitgeist zeitgeist-core zeitgeist-datahub python-zeitgeist rhythmbox-plugin-zeitgeist geoclue geoclue-ubuntu-geoip geoip-database whoopsie popularity-contest
+
+echo "Installing packages"
+
+apt-get install -y iw htop build-essential weechat-curses ekg2 python nodejs pipelight-multi spotify-client \
+		git-core xmonad xmobar firefox vlc vim php5 php5-mcrypt php5-curl php5-mysql php5-intl apache2 mysql-client-5.5 \
+		mysql-server-5.5 mysql-workbench terminator curl phpunit gimp php-apc trayer mtr calcurse newsbeuter cowsay xdebug
+
+###################
+# apt-clean
+###################		
+sudo apt-get autoclean
+sudo apt-get clean
+sudo apt-get autoremove
+
+###################
+# hipster setup
+###################
+sudo npm install -g yo grunt-cli bower
+curl -L https://get.rvm.io | zsh -s stable --ruby
+
+###################
+# pathogen and NERD tree install
+###################
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+curl -Sso ~/.vim/autoload/pathogen.vim \
+    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+	
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+
+
+###################
+# netflix
+###################
+sudo pipelight-plugin --enable silverlight
+pipelight-plugin --enable silverlight
+
+###################
+# ohmyzsh
+###################
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+wget http://download.jetbrains.com/webide/PhpStorm-7.1.tar.gz
