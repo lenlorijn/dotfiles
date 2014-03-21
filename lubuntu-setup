@@ -43,6 +43,7 @@ sudo apt-get autoremove
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 sudo npm install -g yo grunt-cli bower
 sudo curl -L https://get.rvm.io | bash -s stable --ruby
+source /home/len/.rvm/scripts/rvm
 
 ###################
 # pathogen and NERD tree install
@@ -65,3 +66,8 @@ pipelight-plugin --enable silverlight
 ###################
 cd ~/Downloads
 wget http://download.jetbrains.com/webide/PhpStorm-7.1.tar.gz
+
+###################
+# Change shell
+###################
+chsh -s `which zsh`

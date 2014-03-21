@@ -1,8 +1,8 @@
-## Ignoring all magento default files and some projectfiles for netbeans and PHPStorm
-.idea/
+## Ignoring all magento default files and some projectfiles
 .htaccess*
 app/code/community/Find/
 app/code/community/Phoenix/
+app/code/community/Cm
 app/code/core/
 app/design/adminhtml/default/default/
 app/design/adminhtml/default/find/
@@ -17,6 +17,7 @@ app/etc/modules/Enterprise_*
 app/etc/modules/Find_Feed.xml
 app/etc/modules/Mage_*
 app/etc/modules/Phoenix_Moneybookers.xml
+app/etc/modules/Cm_RedisSession.xml
 app/etc/config.xml
 app/etc/local.xml
 app/etc/enterprise.xml
@@ -62,6 +63,9 @@ lib/PEAR/
 lib/phpseclib/
 lib/Varien/
 lib/Zend/
+lib/Magento
+lib/Cm
+lib/Credis
 LICENSE_AFL.txt
 LICENSE.html
 LICENSE.txt
@@ -73,7 +77,7 @@ media/.htaccess
 media/import/
 media/xmlconnect/
 media/dhl/
-nbproject/
+media/catalog/
 pear
 pear/
 php.ini.sample
@@ -96,3 +100,10 @@ skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
 var/
+
+## Tools
+/.idea/
+/n98-magerun.phar
+/composer.phar
+/vendor/
+nbproject/
