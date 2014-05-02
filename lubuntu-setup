@@ -26,8 +26,8 @@ echo "Installing packages"
 
 sudo apt-get install -y curl git-core zsh
 
-sudo apt-get install -y iw htop build-essential weechat-curses ekg2 python nodejs pipelight-multi spotify-client 
-sudo apt-get install -y suckless-tools xmonad xmobar firefox vlc vim php5 php5-mcrypt php5-curl php5-mysql php5-intl apache2 mysql-client-5.5 
+sudo apt-get install -y iw rar unrar calibre htop build-essential weechat-curses ekg2 python nodejs pipelight-multi spotify-client 
+sudo apt-get install -y suckless-tools xmonad xmobar firefox vlc vim php5 php5-gd php5-mcrypt php5-curl php5-mysql php5-intl apache2 mysql-client-5.5 
 sudo apt-get install -y mysql-server-5.5 mysql-workbench terminator phpunit gimp php-apc trayer mtr calcurse newsbeuter cowsay xdebug
 
 ###################
