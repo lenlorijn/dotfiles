@@ -1,0 +1,10 @@
+[user]
+	name = Len Lorijn
+	email = len.lorijn@mediact.nl
+[core]
+	autocrlf = input
+	excludesfile = /home/len/.gitignore_global
+[push]
+	default = simple
+[help]
+	autocorrect = 12
