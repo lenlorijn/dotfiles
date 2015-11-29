@@ -1,0 +1,17 @@
+# Len Terminator
+[global_config]
+use_system_font = False
+font = Inconsolata for Powerline 9
+[profiles]
+ [[default]]
+  palette = "#2d2d2d:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#d3d0c8:#747369:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#f2f0ec"
+  foreground_color = "#515151"
+  background_color = "#f2f0ec"
+  cursor_color = "#515151"
+  font = "Fixed 16"
+  borderless=True
+  scrollbar_position=disabled
+  tab_position=hidden
+  hide_tabbar=True
+  visible_bell=True
+  show_titlebar=False
