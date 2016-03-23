@@ -18,7 +18,7 @@ echo "deb https://apt.dockerproject.org/repo debian-wheezy main" > /etc/apt/sour
 
 echo "\nInstalling docker through apt\n"
 sudo apt-get update
-sudo apt-get install docker-engine
+sudo apt-get install docker-engine docker
 
 echo "\nInstalling docker-compose through pip\n"
 sudo pip install docker-compose
