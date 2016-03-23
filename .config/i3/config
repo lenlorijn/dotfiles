@@ -65,7 +65,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+g split h
+bindsym $mod+n split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -127,6 +127,10 @@ hide_edge_borders both
 new_float pixel 0
 new_window pixel 0
 
+gaps inner 20
+gaps outer 10
+
+smart_gaps on
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -169,7 +173,7 @@ bar {
         #i3bar_command i3bgbar
         #status_command python /usr/local/lib/python2.7/dist-packages/powerline/bindings/i3/powerline-i3.py
 
-        status_command i3status --config ~/.i3/i3status.conf
+        status_command i3status --config ~/.config/i3/i3status.conf
 
 }
 
@@ -178,4 +182,4 @@ bar {
 exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 exec --no-startup-id syndaemon -i 1 -K -d
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-tile ~/Downloads/7b76b8c0.png
+exec --no-startup-id feh --bg-fill ~/Downloads/wallterpaper.png
